@@ -1,0 +1,51 @@
+.header__search-input--click {
+    width: 400px;
+    border: 2px solid var(--red-color);
+    border-radius: var(--rounded-size) var(--rounded-size) 0 0;
+}
+
+.modal-handler {
+    position: relative;
+}
+
+.modal-menu__content {
+    position: absolute;
+    display: none;
+    right: -43px;
+}
+
+.modal-menu__content--click {
+    display: block;
+}
+
+.modal-menu__option {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    width: 480px;
+    padding: 1rem;
+    border-radius: 0 0 var(--rounded-size) var(--rounded-size);
+    border: var(--border-value);
+}
+
+.modal-menu__side {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.modal-menu__item {
+    font-size: 13px;
+    padding: 0.5rem 0.8rem;
+    border-radius: var(--rounded-size);
+}
+
+.modal-menu__item > span {
+    font-size: 10px;
+}
+
+.modal-menu__item:hover {
+    background-color: #0000000a;
+}
+

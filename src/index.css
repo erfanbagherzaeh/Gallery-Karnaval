@@ -1,0 +1,111 @@
+@font-face {
+    font-family: vazir;
+    src: 
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir.ttf') format('truetype'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir.woff') format('woff'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: 
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Bold.ttf') format('truetype'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Bold.woff') format('woff'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: vazir-light;
+    src: 
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Light.ttf') format('truetype'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Light.woff') format('woff'),
+        url('./../public/fonts/vazir/vazir-font-v16.1.0/Vazir-Light.woff2') format('woff2');
+}
+
+/* Container */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container-md {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Variables */
+
+:root {
+    --rounded-size: 30px;
+    --border-value: 1px solid rgba(0, 0, 0, 0.08);
+    --border-color: #ccc;
+    --gary-color: #0000008a;
+    --dark-color: #000000de;
+    --red-color: #ff5050;
+    --sky-color: #2196f3;
+    --green-color: #00bf96;
+}
+
+/* Default Element */
+
+body {
+    background-color: #f2f6fc;
+    overflow-x: hidden;
+}
+
+/* Main Class */
+
+.bg-white {
+    background-color: #FFFFFF !important;
+}
+
+.bg-red {
+    background-color: var(--red-color) !important;
+}
+
+.text-gary {
+    color: var(--gary-color) !important;
+}
+
+.text-dark {
+    color: var(--dark-color) !important;
+}
+
+.text-sky {
+    color: var(--sky-color) !important;
+}
+
+.text-red {
+    color: var(--red-color) !important;
+}
+
+.fs-low {
+    font-size: 10px;
+}
+
+.fs-medium {
+    font-size: 15px;
+}
+
+.fs-height {
+    font-size: 19px;
+}
+
+.fs-icon {
+    font-size: 26px;
+}
+
+/* Fonts Class */
+
+.vz {
+    font-family: vazir;
+}
+
+.vz-bold {
+    font-family: vazir-bold;
+}
+
+.vz-light {
+    font-family: vazir-light;
+}
