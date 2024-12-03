@@ -1,0 +1,397 @@
+.box-main {
+    width: 1000px;
+    height: 50px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-icon {
+    width: 140px;
+    height: 50px;
+    /* background-color: aqua; */
+    /* margin-right: 30px; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: vazir-light;
+
+    /* border-bottom: 3px solid red; */
+}
+
+.box-flex {
+    display: flex;
+}
+
+.text-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text-icon span {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.text-icon:hover {
+    opacity: 0.8;
+}
+
+.box-select {
+    width: 146px;
+    height: 30px;
+    border: 2px solid #00bf96;
+    border-radius: 30px;
+    margin: 10px 19px;
+    font-family: vazir-light;
+    font-size: 14px;
+}
+
+.container-photo {
+    width: 1000px;
+    height: 1700px;
+    /* background-color: blueviolet; */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.ax1 {
+    width: 360px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300);
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+    /* انیمیشن برای تغییر رنگ پس‌زمینه */
+    cursor: pointer;
+}
+
+/* افکت هاور */
+.ax1:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+
+.ax2 {
+    width: 290px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300);
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax2:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+
+.ax3 {
+    width: 140px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300);
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax3:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+.ax4 {
+    width: 190px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300  );
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax4:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+.ax5 {
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300  );
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax5:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+.ax6 {
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 );
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax6:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+.ax7 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300 );
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax7:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+}
+
+.ax8 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300 );
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.ax8:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* بک‌گراند طوسی پررنگ با شفافیت */
+    background-blend-mode: darken;
+    /* ادغام رنگ پس‌زمینه و تصویر */
+
+}
+
+
+@media (max-width: 960px) {
+    .box-main {
+        width: 95%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .box-select {
+        width: 90%;
+        margin: auto;
+    }
+
+    .text-icon {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: -100px; */
+    }
+
+    .text-icon span {
+        margin: auto;
+        margin-right: -0px;
+    }
+
+    .icon {
+        margin-right: 120px;
+    }
+}
+@media (max-width: 804px) {
+    .container-photo {
+        width: 650px;
+        /* background-color: blueviolet; */
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+}
+@media (max-width: 648px) {
+    .container-photo {
+        width: 600px;
+        height: auto;
+        /* background-color: blueviolet; */
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .ax1{
+        width: 94%;
+        margin: auto;
+    }
+    .ax2{
+        width: 50%;
+        margin: auto;
+    }
+    .ax3{
+        width: 45%;
+        margin: auto;
+        
+    }
+    .ax4 ,.ax5 ,.ax6{
+        width: 45%;
+        margin: auto;
+    }
+    .ax8{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (max-width: 588px){
+    .container-photo {
+        width: 400px;
+        height: auto;
+        /* background-color: blueviolet; */
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .ax6{
+        width: 94%;
+        margin: auto;
+    }
+    .ax7{
+        width: 94%;
+        margin: auto;
+    }
+  
+}
+@media (max-width: 700px) {
+    .text-icon {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-right: -150px; */
+        margin-left: -110px;
+        flex-direction: row;
+        position: relative;
+        left: 110px;
+
+    }
+
+    .text-icon span {
+        margin: auto;
+        margin-right: 30px;
+
+    }
+
+    .icon {
+        /* margin-left: 103px; */
+        position: relative;
+        right: 30px;
+    }
+
+    .box-flex {
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+@media (max-width: 430px) {
+    .text-icon {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-right: -150px; */
+        margin-left: -110px;
+        flex-direction: row;
+        position: relative;
+        left: 136px;
+
+    }
+
+    .container-photo {
+        width: 397px;
+        height: auto;
+        /* background-color: blueviolet; */
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .ax1,
+    .ax2,
+    .ax3,
+    .ax4,
+    .ax5,
+    .ax6,
+    .ax7,
+    .ax8 {
+        width: 94%;
+        height: 300px;
+        margin: 5px auto; /* فاصله بالا و پایین و مرکز کردن المان‌ها */
+        display: block; /* اطمینان از اینکه عناصر بلوک هستند */
+    }
+    
+}

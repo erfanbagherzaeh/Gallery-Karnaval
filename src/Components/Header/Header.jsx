@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Header.css'
+import {  Link } from "react-router-dom"
 
 const Header = () => {
 
@@ -70,14 +71,20 @@ const Header = () => {
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div className='box-icon__item'>
-                                        <i className='fa-sharp fa-camera fs-icon'></i>
-                                        <span className='vz-light fs-low'>عکاسخانه</span>
-                                    </div>
-                                </a>
-                            </li>
+                           
+                                <nav>
+                                    <ul>
+                                        <li>
+                                                <div className="box-icon__item">
+                                                    <i className="fa-sharp fa-camera fs-icon"></i>
+                                                   <Link to="/Gallery"> <span className="vz-light fs-low">  عکاسخانه</span></Link>
+                                                </div>
+                                            
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            
                             <li>
                                 <a href="#">
                                     <div className='box-icon__item'>
