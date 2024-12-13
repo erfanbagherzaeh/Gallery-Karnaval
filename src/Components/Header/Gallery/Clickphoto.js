@@ -12,7 +12,7 @@ const Main = () => {
         <main>
             <section>
                 <div className='main-image'>
-                    <img src="./images/main-image.jpg" alt="baner" /> 
+                    <img src="./images/main-image.jpg" alt="baner" />   
                 </div>
             </section>
 

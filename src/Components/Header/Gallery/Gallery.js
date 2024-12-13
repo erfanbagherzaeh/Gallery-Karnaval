@@ -3,60 +3,14 @@ import Footer from '../../Footer/Footer';
 import Header from '../Header';
 import './Gallery.css';
 import '../../../App.css';
-
 import { AiFillHeart, AiFillCamera, AiOutlineRise } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
-function Gallery() {
-    // تابع باز کردن تصویر
-    const openImage1 = () => {
-        window.open(
-            "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300",
-            "_blank"
-        );
-    };
-    const openImage2 = () => {
-        window.open(
-            " https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300",
-            "_blank"
-        );
-    };
-    const openImage3 = () => {
-        window.open(
-            " https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300",
-            "_blank"
-        );
-    };
-    const openImage4 = () => {
-        window.open(
-            " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 ",
-            "_blank"
-        );
-    };
-    const openImage5 = () => {
-        window.open(
-            " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 ",
-            "_blank"
-        );
-    };
-    const openImage6 = () => {
-        window.open(
-            " 	https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 ",
-            "_blank"
-        );
-    };
-    const openImage7 = () => {
-        window.open(
-            " 	 https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300 ",
-            "_blank"
-        );
-    };
-    const openImage8 = () => {
-        window.open(
-            " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300",
-            "_blank"
-        );
-    }
 
+// کامپوننت‌های صفحات مختلف
+
+
+function Gallery(props) {
     return (
         <>
             <Header />
@@ -96,43 +50,113 @@ function Gallery() {
             </div>
 
             <div className="container-photo">
-                {/* باکس تصویر با قابلیت کلیک */}
-                <div className="ax1" onClick={openImage1}></div>
-                <div className="ax2" onClick={openImage2}></div>
-                <div className="ax3" onClick={openImage3}></div>
-                <div className="ax4" onClick={openImage4}></div>
-                <div className="ax5" onClick={openImage5}></div>
-                <div className="ax6" onClick={openImage6}></div>
-                <div className="ax7" onClick={openImage7}></div>
-                <div className="ax8" onClick={openImage8}></div>
+                {/* لینک‌ها */}
 
-                <div className="ax1" onClick={openImage1}></div>
-                <div className="ax2" onClick={openImage2}></div>
-                <div className="ax3" onClick={openImage3}></div>
-                <div className="ax4" onClick={openImage4}></div>
-                <div className="ax5" onClick={openImage5}></div>
-                <div className="ax6" onClick={openImage6}></div>
-                <div className="ax7" onClick={openImage7}></div>
-                <div className="ax8" onClick={openImage8}></div>
 
-                <div className="ax1" onClick={openImage1}></div>
-                <div className="ax2" onClick={openImage2}></div>
-                <div className="ax3" onClick={openImage3}></div>
-                <div className="ax4" onClick={openImage4}></div>
-                <div className="ax5" onClick={openImage5}></div>
-                <div className="ax6" onClick={openImage6}></div>
-                <div className="ax7" onClick={openImage7}></div>
-                <div className="ax8" onClick={openImage8}></div>
 
-                <div className="ax1" onClick={openImage1}></div>
-                <div className="ax2" onClick={openImage2}></div>
-                <div className="ax3" onClick={openImage3}></div>
-                <div className="ax4" onClick={openImage4}></div>
-                <div className="ax5" onClick={openImage5}></div>
-                <div className="ax6" onClick={openImage6}></div>
-                <div className="ax7" onClick={openImage7}></div>
-                <div className="ax8" onClick={openImage8}></div>
 
+                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
+                    <div className="ax1"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
+                    <div className="ax2"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
+                    <div className="ax3"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
+                    <div className="ax4"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
+                    <div className="ax5"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
+                    <div className="ax6"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
+                    <div className="ax7"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
+                    <div className="ax8"></div>
+                </Link>
+
+
+                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
+                    <div className="ax1"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
+                    <div className="ax2"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
+                    <div className="ax3"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
+                    <div className="ax4"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
+                    <div className="ax5"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
+                    <div className="ax6"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
+                    <div className="ax7"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
+                    <div className="ax8"></div>
+                </Link>
+
+
+                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
+                    <div className="ax1"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
+                    <div className="ax2"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
+                    <div className="ax3"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
+                    <div className="ax4"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
+                    <div className="ax5"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
+                    <div className="ax6"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
+                    <div className="ax7"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
+                    <div className="ax8"></div>
+                </Link>
+
+
+                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
+                    <div className="ax1"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
+                    <div className="ax2"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
+                    <div className="ax3"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
+                    <div className="ax4"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
+                    <div className="ax5"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
+                    <div className="ax6"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
+                    <div className="ax7"></div>
+                </Link>
+                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
+                    <div className="ax8"></div>
+                </Link>
 
 
             </div>
@@ -141,5 +165,6 @@ function Gallery() {
         </>
     );
 }
+
 
 export default Gallery;

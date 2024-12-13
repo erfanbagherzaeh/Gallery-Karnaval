@@ -1,6 +1,6 @@
 import { useState } from "react"
-
-const Main = () => {
+import './linkphoto.css'
+const Ax6 = () => {
 
     const [isClick, setIsClick] = useState(false)
 
@@ -10,9 +10,9 @@ const Main = () => {
 
     return (
         <main>
-            <section>
-                <div className='main-image'>
-                    <img src="./images/main-image.jpg" alt="baner" /> 
+            <section  >
+                <div className='main-image'   >
+                    <img   src=" https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300"   alt="baner"  />   
                 </div>
             </section>
 
@@ -38,16 +38,16 @@ const Main = () => {
                     <div className='info-box'>
                         <div className='info-box__one'>
                             <div className='info-box__title'>
-                                <h3 className='vz-bold'>حیران شو از این همه زیبایی</h3>
+                                <h3 className='vz-bold'>  ریشهر </h3>
                                 <div className='info-box__location-bex'>
-                                    <i className='fa-sharp fa-regular fa-location-dot text-gary'></i>
-                                    <p className='vz-light'><span className='text-gary'>ایران</span> {'>'} استان اردبیل</p>
+                                    {/* <i className='fa-sharp fa-regular fa-location-dot text-gary'></i> */}
+                                    {/* <p className='vz-light'><span className='text-gary'>ایران</span> {'>'} استان اردبیل</p> */}
                                 </div>
                             </div>
 
                             <div className='info-box__profile'>
-                                <img src="./images/profile-user.jpg" alt="profile" />
-                                <p className='vz'>مهسا محرابی</p>
+                                <img src=" 	https://media.karnaval.ir/members/image/default/profile.png?size=40x40" width={100} height={100} alt="profile" />
+                                <p className='vz'>     فرهاد جهانبخش </p>
                             </div>
                         </div>
 
@@ -71,10 +71,10 @@ const Main = () => {
 
                         <div className='info-box__three'>
                             <div className='info-box__user-comment'>
-                                <img src="./images/profile-user.jpg" alt="profile" width='45' />
+                                <img src=" 	https://media.karnaval.ir/members/image/default/profile.png?size=40x40"  width={50} height={50}  alt="profile"  />
                                 <div className='user-comment text-dark vz-bold'>
-                                    <p className='text-sky'>مهسا محرابی</p>
-                                    <p>نمایی از گردنه حیران از فراز جنگل فندقلو در شهر نمین خرداد 96</p>
+                                    <p className='text-sky'>   فرهاد جهانبخش   </p>
+                                    <p> یکی از سواحل زیبای بوشهر به نام ریشر یا ریشهر </p>
                                 </div>
                             </div>
 
@@ -92,4 +92,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Ax6
