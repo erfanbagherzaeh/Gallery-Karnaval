@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './linkphoto.css'
 const Ax1 = () => {
-
+  
     const [isClick, setIsClick] = useState(false)
 
     const likeHandler = () => {
@@ -9,12 +9,14 @@ const Ax1 = () => {
     }
 
     return (
+
         <main>
             <section  >
                 <div className='main-image'   >
-                    <img   src="https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300"   alt="baner"  />   
+                    <img src="https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" alt="baner" />
                 </div>
             </section>
+ 
 
             <div className="container">
                 <section>
