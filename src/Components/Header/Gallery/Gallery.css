@@ -53,171 +53,41 @@
 
 .container-photo {
     width: 1000px;
-    height: 1700px;
+    height: 430px;
     /* background-color: blueviolet; */
     margin: 20px auto;
-    display: flex;
+    display: flex
+;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+
 
 }
-
-.ax1 {
-    width: 360px;
+.photo-box{
+    width: 340px;
     height: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300);
     border-radius: 40px;
     transition: background-color 0.3s ease;
-    /* انیمیشن برای تغییر رنگ پس‌زمینه */
     cursor: pointer;
+
 }
-
-/* افکت هاور */
-.ax1:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-
-.ax2 {
-    width: 290px;
+.photo-boxx{
+    width: 340px;
     height: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300);
     border-radius: 40px;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-
-}
-
-.ax2:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-
-.ax3 {
-    width: 140px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300);
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax3:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-.ax4 {
-    width: 190px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300  );
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax4:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-.ax5 {
-    width: 150px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300  );
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax5:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-.ax6 {
-    width: 150px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 );
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax6:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-.ax7 {
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300 );
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax7:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-}
-
-.ax8 {
-    width: 350px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300 );
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.ax8:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    /* بک‌گراند طوسی پررنگ با شفافیت */
-    background-blend-mode: darken;
-    /* ادغام رنگ پس‌زمینه و تصویر */
-
+   position: relative;
+   top: 20px;
 }
 
 

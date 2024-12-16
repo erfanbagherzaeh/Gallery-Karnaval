@@ -1,32 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Footer from '../../Footer/Footer';
 import Header from '../Header';
 import './Gallery.css';
 import '../../../App.css';
 import { AiFillHeart, AiFillCamera, AiOutlineRise } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
+function Gallery() {
+    const [users, setUsers] = useState([]);
 
-// کامپوننت‌های صفحات مختلف
+    // استفاده از useEffect برای فراخوانی API
+    useEffect(() => {
+        axios.get('http://localhost:4000/users') // آدرس فایل db.json یا API محلی شما
+            .then(response => setUsers(response.data))
+            .catch(error => console.error('Error fetching data:', error));
+    }, []); // آرایه خالی یعنی فقط یک بار اجرا شود
 
-
-function Gallery(props) {
     return (
         <>
             <Header />
 
+            {/* بخش انتخاب‌ها */}
             <div className="box-main">
                 <div className="box-flex">
                     <div className="text-icon" style={{ marginRight: '30px' }}>
                         <AiFillHeart style={{ color: "#00bf96" }} className='icon' />
                         <span> محبوب </span>
                     </div>
-
                     <div className="text-icon">
                         <AiFillCamera style={{ color: "#00bf96" }} className='icon' />
                         <span> تازه ها </span>
                     </div>
-
                     <div className="text-icon">
                         <AiOutlineRise style={{ color: "#00bf96" }} className='icon' />
                         <span> درحال پیشرفت </span>
@@ -49,122 +54,56 @@ function Gallery(props) {
                 </select>
             </div>
 
+            {/* بخش نمایش تصاویر */}
+         
             <div className="container-photo">
-                {/* لینک‌ها */}
-
-
-
-
-                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
-                    <div className="ax1"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
-                    <div className="ax2"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
-                    <div className="ax3"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
-                    <div className="ax4"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
-                    <div className="ax5"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
-                    <div className="ax6"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
-                    <div className="ax7"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
-                    <div className="ax8"></div>
-                </Link>
-
-
-                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
-                    <div className="ax1"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
-                    <div className="ax2"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
-                    <div className="ax3"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
-                    <div className="ax4"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
-                    <div className="ax5"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
-                    <div className="ax6"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
-                    <div className="ax7"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
-                    <div className="ax8"></div>
-                </Link>
-
-
-                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
-                    <div className="ax1"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
-                    <div className="ax2"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
-                    <div className="ax3"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
-                    <div className="ax4"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
-                    <div className="ax5"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
-                    <div className="ax6"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
-                    <div className="ax7"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
-                    <div className="ax8"></div>
-                </Link>
-
-
-                <Link to={{ pathname: "/Gallery/ax1", state: { img: "https://media.karnaval.ir/members/2024/10/ea35070c-6783-4125-bfd9-830d553ecce7.jpg?size=0x300" } }}>
-                    <div className="ax1"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax2", state: { img: "https://media.karnaval.ir/members/2024/10/9cb74b48-b267-43a8-9906-daf2c3fe5564.jpeg?size=0x300" } }}>
-                    <div className="ax2"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax3", state: { img: "https://media.karnaval.ir/members/2024/11/bfa9676a-23ca-4289-8a4b-fb27786fba66.jpg?size=0x300" } }}>
-                    <div className="ax3"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax4", state: { img: " https://media.karnaval.ir/members/2024/11/9a0fc945-3196-43f9-b51d-591b14883c90.jpg?size=0x300 " } }}>
-                    <div className="ax4"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax5", state: { img: " https://media.karnaval.ir/members/2024/10/5dfdaf1a-b36d-4640-8218-eb7b1f66bfef.jpg?size=0x300 " } }}>
-                    <div className="ax5"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax6", state: { img: " https://media.karnaval.ir/members/2024/10/72becb09-8ae2-4bb8-b9d7-02987147a1d3.jpg?size=0x300 " } }}>
-                    <div className="ax6"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax7", state: { img: " https://media.karnaval.ir/members/2024/10/36d2f762-0c52-49e0-abc0-29c6491eefe9.jpg?size=0x300" } }}>
-                    <div className="ax7"></div>
-                </Link>
-                <Link to={{ pathname: "/Gallery/ax8", state: { img: " https://media.karnaval.ir/members/2024/10/581a6d92-4aae-49fc-9377-691c79f5a6e6.jpeg?size=0x300" } }}>
-                    <div className="ax8"></div>
-                </Link>
-
-
+                {users.map((user, index) => (
+                    <Link
+                        key={user.id} // استفاده از id به‌عنوان کلید یکتا
+                        to={{
+                            pathname: `/Gallery/ax${index + 1}`, // لینک پویا
+                            state: { img: user.img || user.filename } // انتخاب تصویر از img یا filename
+                        }}
+                    >
+                        <div
+                            className="photo-box"
+                            style={{
+                                backgroundImage: `url(${user.img || user.filename})`, // استفاده از URL تصویر
+                                width:250,
+                                marginBottom:0
+                            }}
+                        >
+                        </div>
+                        
+                    </Link>
+                ))}
+            </div>
+            <div className="container-photo">
+                {users.map((user, index) => (
+                    <Link
+                        key={user.id} // استفاده از id به‌عنوان کلید یکتا
+                        to={{
+                            pathname: `/Gallery/ax${index + 1}`, // لینک پویا
+                            state: { img: user.img || user.filename } // انتخاب تصویر از img یا filename
+                        }}
+                    >
+                        <div
+                            className="photo-box"
+                            style={{
+                                backgroundImage: `url(${user.img || user.filename})`, // استفاده از URL تصویر
+                                width:250,
+                                marginBottom:0
+                            }}
+                        >
+                        </div>
+                        
+                    </Link>
+                ))}
             </div>
 
             <Footer />
         </>
     );
 }
-
 
 export default Gallery;

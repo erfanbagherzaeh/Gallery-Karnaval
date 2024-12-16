@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
+import './linkphoto.css'
 // کامپوننت‌های جداگانه برای هر عکس
 import Ax1 from './ax1';
 import Ax2 from './ax2';
